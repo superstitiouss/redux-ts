@@ -15,6 +15,6 @@ export const usersReducer = (state = initialState, action: UsersAction): UsersSt
         case UsersActionTypes.FETCH_USERS_ERROR:
             return {loading: false, error: action.payload, users: []}
         default:
-            return state;;
+            return state;
     }
 }
